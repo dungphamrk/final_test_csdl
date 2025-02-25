@@ -129,7 +129,7 @@ WHERE payment_method like 'Cash' and payment_status like 'Pending';
 -- PHẦN 4: Truy vấn dữ liệu
 -- 1. Lấy thông tin 5 hành khách gồm mã, tên, email, ngày sinh, và giới tính, sắp xếp theo tên hành khách tăng dần
 
-SELECT passenger_id, passenger_full_name,passenger_phone,passenger_gender
+SELECT passenger_id, passenger_full_name,passenger_email, passenger_bod,passenger_gender
 FROM passenger 
 ORDER BY passenger_full_name ASC
 LIMIT 5;
